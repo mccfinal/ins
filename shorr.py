@@ -1,3 +1,14 @@
+#def sch_sign(message,p,g,x):
+#k=3
+#r = mod_exp(g,k,p)
+#e = (message + r) % (p-1)
+#s = (k + x * e) % (p-1)
+#return e,s
+#def verify(message,e,s,p,g,y):
+#r1 = (mod_exp(g,s,p)*mod_inv(mod_exp(y,e,p),p))%p
+#e1 = (message + r1) % (p-1)
+#return e1 == e
+
 import hashlib
 import random
 
